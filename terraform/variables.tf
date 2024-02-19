@@ -1,7 +1,7 @@
 variable "aws_region" {
   description = "The AWS region to deploy to"
   type        = string
-  default     = "us-east-1"
+  default     = "eu-central-1"
 }
 
 variable "project_name" {
@@ -13,7 +13,7 @@ variable "project_name" {
 variable "github_owner" {
   description = "GitHub repository owner"
   type        = string
-  default     = "tarasowski"
+  default     = "RaupeCHR"
 }
 
 variable "github_repo" {
@@ -31,7 +31,7 @@ variable "github_branch" {
 variable "instance_ami" {
   description = "instance ami"
   type        = string
-  default     = "ami-0c7217cdde317cfec"
+  default     = "ami-0faab6bdbac9486fb"
 }
 
 variable "instance_type" {
@@ -43,11 +43,11 @@ variable "instance_type" {
 variable "availability_zones" {
   description = "instance ami"
   type        = list(any)
-  default     = ["us-east-1a", "us-east-1b"]
+  default     = ["eu-central-1a", "eu-central-1b"]
 }
 
 variable "pem_key" {
   description = "instance ami"
   type        = string
-  default     = "mvpfoundry"
+  default     = "Mainkey"
 }
